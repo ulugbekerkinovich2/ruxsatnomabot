@@ -1,6 +1,6 @@
 from aiogram import types
 from aiogram.dispatcher.filters.builtin import CommandStart
-from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton,WebAppInfo
 from keyboards.default.menuKeyboard import contact_keyboard, dtm_keyboard
 from loader import dp, bot
 from data.config import CHANNEL_ID, CHANNEL_USERNAME, web_app_url
@@ -54,7 +54,12 @@ async def phone(message: types.Message, state: FSMContext):
         sent_message = await bot.send_message(user_id, "Rahmat 😎, endi botdan to'liq foydalanishingiz mumkin.", reply_markup=types.ReplyKeyboardRemove())
         inline_kb = InlineKeyboardMarkup(row_width=1)
         subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
-        inline_kb.add(subscribe_button)
+        
+        # Create the second button
+        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', web_app=WebAppInfo(url=web_app_url))
+        
+        # Add both buttons to the inline keyboard
+        inline_kb.add(subscribe_button, exam_score_button)
 
         sent_message = await bot.send_message(user_id, "Abituriyent ruxsatnomasini olish uchun quyidagi tugmani bosing:", reply_markup=inline_kb)
     else:
@@ -66,6 +71,8 @@ async def phone(message: types.Message, state: FSMContext):
         sent_message = await bot.send_message(user_id, "<b>Botdan foydalanishda davom etish uchun quyidagi kanallarimizga obuna bo'ling.</b>", reply_markup=inline_kb, parse_mode="HTML")
     
     await state.update_data(last_message_id=sent_message.message_id)
+
+
 
 @dp.callback_query_handler(lambda c: c.data == 'check_subscription')
 async def check_subscription(callback_query: types.CallbackQuery, state: FSMContext):
