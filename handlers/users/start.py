@@ -201,7 +201,7 @@ async def dtm_ball_func(message: types.Message, state: FSMContext):
         Specialization = dtm_result['Specialization']
         University = dtm_result['University']
         Score = dtm_result['Score']
-        await message.answer(f"Sizning imtihon natijasi:\n\tID: {ID}\n\nIsm: {Name}\n\Mutaxasisslik: {Specialization}\n\nUniversitet: {University}\n\nBall: {Score}")
+        await message.answer(f"Sizning imtihon natijasi:\n\tID: {ID}\n\nIsm: {Name}\nMutaxasisslik: {Specialization}\n\nUniversitet: {University}\n\nBall: {Score}")
         await state.finish()
     else:
         await message.answer("Iltimos, to'g'ri DTM ID raqamini kiriting.")
