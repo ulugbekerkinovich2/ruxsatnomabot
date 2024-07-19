@@ -1,0 +1,2899 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="/css/site.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="colorlib.com">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,600,700" rel="stylesheet" />
+    <link href="/sec/css/main.css" rel="stylesheet" />
+
+
+    <link href="/css/social.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- daterange picker -->
+    <link rel="stylesheet" href="/plugins/daterangepicker/daterangepicker.css">
+    <!-- iCheck for checkboxes and radio inputs -->
+    <link rel="stylesheet" href="/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+    <!-- Bootstrap Color Picker -->
+    <link rel="stylesheet" href="/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+    <!-- Tempusdominus Bbootstrap 4 -->
+    <link rel="stylesheet" href="/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="/plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="/plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
+    <!-- Bootstrap4 Duallistbox -->
+    <link rel="stylesheet" href="/plugins/bootstrap4-duallistbox/bootstrap-duallistbox.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <style>
+        .back-to-top {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            display: none;
+        }
+    </style>
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+
+    <div class="container" style="max-width: 1340px;">
+        <main role="main" class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="row" style="box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);">
+                                    <div class="col-md-1" style="text-align: center">
+                                        <a href="/"><img src="/Logo.png" alt="logo" style="vertical-align: middle"></a>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h5 style="font-family: serif;text-align: center;vertical-align: middle;margin-top: 10px;">
+                                            <b>
+                                                АГЕНТСТВО ПО ОЦЕНКЕ ЗНАНИЙ И КВАЛИФИКАЦИЙ<br />
+                                                ПРИ МИНИСТЕРСТВЕ ВЫСШЕГО ОБРАЗОВАНИЯ,<br />
+                                                НАУКИ И ИННОВАЦИЙ РЕСПУБЛИКИ УЗБЕКИСТАН
+                                            </b>
+                                        </h5>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="container">
+                                            
+
+<form method="post" action="/Home/SetLanguage?returnUrl=%2FHome2023%2FAfterFilter">
+
+    <div class="row">
+            <a style="color: black" href="/"><i class="fa fa-home" aria-hidden="true" style="padding: 10px 20px; font-size: 22px"></i></a>
+            <button name="culture" type="submit" value="uz" class="btn btn-light">
+                <img src="/images/uz.png" style="width: 30px;">
+            </button>
+            <button name="culture" type="submit" value="ka" class="btn btn-light">
+                <img src="/images/ka.png" style="width: 30px;">
+            </button>
+            <button name="culture" type="submit" value="ru" class="btn btn-light">
+                <img src="/images/ru.png" style="width: 30px;">
+            </button>
+    </div>
+
+<input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <br />
+                                <div>
+                                    <text id="path" style="color: slategray"></text>
+                                </div>
+                            </div>
+                            <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+                            
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mandat</title>
+
+</head>
+<body>
+    <!-- Modal -->
+    <div id="Modal" class="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h3>Ошибка!</h3>
+                </div>
+                <div class="modal-body">
+                    <h3>Выберите направление или введите идентификатор (ID)!</h3>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="closeModel">Отмена</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal harbiy farzand jadval-->
+    <div class="modal fade" id="ModalHarbiy" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="/images/HarbiyJadval3.jpg" style="width: 100%;" />
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Yopish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="card-header">
+        <div class="card shadow">
+            <div class="card-body">
+                <nav>
+                    <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active btn btn-outline-primary" id="nav-home-tab" data-toggle="tab" href="#nav-tab1" role="tab" aria-controls="nav-home" aria-selected="true">Поиск по номеру ID</a>
+                        <a class="nav-item nav-link btn btn-outline-primary" id="nav-profile-tab" data-toggle="tab" href="#nav-tab2" role="tab" aria-controls="nav-profile" aria-selected="false">Расширенный поиск</a>
+                    </div>
+                </nav>
+                <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="nav-tab1" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <br />
+                            <!--Qidiruv Panel-->
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <i class="fa fa-search" aria-hidden="true"></i>
+                                            </div>
+                                            <input class="form-control" name="name" id="inputID" placeholder="Введите идентификатор (ID)" onKeyPress="if (this.value.length == 7) return false;" type="number" maxlength="7" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="button" class="input form-control btn-search" onclick="dropAll(); document.getElementById('Submit1').click()" value="Поиск" style="background-color: #00BBEC; color: white; width: 100%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-tab2" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <br />
+                            <!--Filter 1-qator-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select name="region" class="form-control select2" style="width: 100%;" id="RegionID" onchange="drop1()">
+                                            <option value="0" selected>
+                                                Выберите регион
+                                            </option>
+                                        <option value="1">Qoraqalpog&#x2018;iston Respublikasi</option>
+<option value="2">Andijon viloyati</option>
+<option value="3">Namangan viloyati</option>
+<option value="4">Farg&#x2018;ona viloyati</option>
+<option value="5">Buxoro viloyati</option>
+<option value="6">Xorazm viloyati</option>
+<option value="7">Surxondaryo viloyati</option>
+<option value="8">Qashqadaryo viloyati</option>
+<option value="9">Jizzax viloyati</option>
+<option value="10">Navoiy viloyati</option>
+<option value="11">Samarqand viloyati</option>
+<option value="12">Sirdaryo viloyati</option>
+<option value="13">Toshkent viloyati</option>
+<option value="14">Toshkent shahri</option>
+</select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select name="university" class="form-control select2" style="width: 100%;" id="UniversityID" onchange="drop2()" disabled>
+                                            <option value="0" selected>
+                                                Выберите ВУЗ
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select name="faculty" class="form-control select2" style="width: 100%;" id="FacultyID" onchange="drop3()" disabled>
+                                            <option value="0" selected>
+                                                Выберите направление
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Filter 2-qator-->
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select name="edLang" class="form-control select2" style="width: 100%;" id="EducLangId" onchange="drop4()" disabled>
+                                            <option value="0" selected>
+                                                Выберите язык обучения
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <select name="edType" class="form-control select2" style="width: 100%;" id="EducTypeID" disabled>
+                                            <option value="0" selected>
+                                                Выберите форму обучения
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <input type="submit" class="input form-control btn-search" id="Submit1" value="Поиск" style="background-color: #00BBEC; color: white; width: 100%;" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+            </div>
+        </div>
+
+        <!--Imtiyozlilar paneli-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <div class="card collapsed-card" style="background-color: #bee5eb;" id="collaps">
+                        <div class="card-header">
+                            <h5 class="card-title">С привилегиями</h5>
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnOlis" onclick="OpenImtPanel7()" class="btn btn-block btn-default">
+                                            <i class="fa fa-check" style="color: red"></i> Проживающие в отдаленных пустынных районах
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnNog" onclick="OpenImtPanel1()" class="btn btn-block btn-default"><i class="fa fa-check" style="color:orangered"></i> Лица с инвалидностью</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnMuy" onclick="OpenImtPanel2()" class="btn btn-block btn-default"><i class="fa fa-check" style="color:orangered"></i> Дети без родителей</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnSoldier" onclick="OpenImtPanel3()" class="btn btn-block btn-default"><i class="fa fa-check" style="color: red"></i> Имеющие военную рекомендацию</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnXQ" onclick="OpenImtPanel4()" class="btn btn-block btn-default"><i class="fa fa-check" style="color:orangered"></i> Женщины</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnIIVF" onclick="OpenImtPanel5()" class="btn btn-block btn-default">
+                                            <i class="fa fa-check" style="color: red"></i> Дети сотрудников МВД
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnXQ5" onclick="OpenImtPanel8()" class="btn btn-block btn-default">
+                                            <i class="fa fa-check" style="color: red"></i> Женщины, имеющие пятилетний стаж
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnHF" onclick="OpenImtPanel6()" class="btn btn-block btn-default">
+                                            <i class="fa fa-check" style="color: red"></i> Военные дети
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-12">
+                                    <div class="description-block">
+                                        <button type="button" id="btnBOJF" onclick="OpenImtPanel9()" class="btn btn-block btn-default">
+                                            <i class="fa fa-check" style="color: red"></i> Дети сотрудников таможенных органов
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Imtiyozlilar filter paneli-1-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv1" style="display:none">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input value="true" id="ImtInp" hidden style="display:none" />
+                            <select name="university" id="UniversityID1" class="form-control select2" style="width: 100%;" onchange="drop2_1()">
+                                <option value="0" selected>
+                                    Выберите ВУЗ
+                                </option>
+                            <option value="350">Jahon iqtisodiyoti va diplomatiya universiteti</option>
+<option value="351">Jizzax davlat pedagogika universiteti</option>
+<option value="352">Nukus davlat pedagogika instituti</option>
+<option value="353">Navoiy davlat pedagogika instituti</option>
+<option value="354">Chirchiq davlat pedagogika universiteti</option>
+<option value="355">Toshkent davlat pedagogika universiteti</option>
+<option value="356">Qo&#x2018;qon davlat pedagogika instituti</option>
+<option value="357">Termiz davlat pedagogika instituti</option>
+<option value="358">Samarqand davlat universiteti Urgut filiali</option>
+<option value="360">Toshkent davlat iqtisodiyot universiteti Samarqand filiali</option>
+<option value="361">Andijon davlat tibbiyot instituti</option>
+<option value="362">Buxoro tibbiyot instituti</option>
+<option value="363">&#x421;&#x430;&#x43C;&#x430;&#x440;&#x49B;&#x430;&#x43D;&#x434; &#x434;&#x430;&#x432;&#x43B;&#x430;&#x442; &#x442;&#x438;&#x431;&#x431;&#x438;&#x451;&#x442; &#x443;&#x43D;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x438;</option>
+<option value="364">Toshkent tibbiyot akademiyasi</option>
+<option value="365">Toshkent davlat texnika universiteti Olmaliq filiali</option>
+<option value="366">Toshkent davlat stomatologiya instituti</option>
+<option value="367">Toshkent  pediatriya tibbiyot instituti</option>
+<option value="368">Toshkent tibbiyot akademiyasi Termiz filiali</option>
+<option value="369">Toshkent farmatsevtika instituti</option>
+<option value="370">Toshkent davlat texnika universiteti Qo&#x2BB;qon filiali</option>
+<option value="371">Andijon qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="372">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti</option>
+<option value="373">Toshkent davlat agrar universiteti</option>
+<option value="374">Termiz agrotexnologiyalar va innovatsion rivojlanish instituti</option>
+<option value="375">Qarshi muhandislik - iqtisodiyot instituti</option>
+<option value="376">&quot;Toshkent irrigatsiya va qishloq xo&#x2018;jaligini mexanizatsiyalash muhandislari instituti&quot; milliy tadqiqotlar universiteti</option>
+<option value="377">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti</option>
+<option value="378">O&#x2018;zbekiston  davlat konservatoriyasi</option>
+<option value="379">Toshkent davlat texnika universiteti Termiz filiali</option>
+<option value="380">Toshkent axborot texnologiyalari universiteti</option>
+<option value="381">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti  Farg&#x2018;ona mintaqaviy filiali</option>
+<option value="382">O&#x2018;zbekiston  davlat jismoniy tarbiya va sport universiteti</option>
+<option value="384">Toshkent davlat yuridik universiteti</option>
+<option value="385">Samarqand iqtisodiyot va servis instituti</option>
+<option value="386">Qoraqalpog&#x2018;iston qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="387">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Toshkent filiali</option>
+<option value="388">Toshkent axborot texnologiyalari universiteti Samarqand filiali</option>
+<option value="389">Toshkent axborot texnologiyalari universiteti Qarshi filiali</option>
+<option value="390">Toshkent axborot texnologiyalari universiteti Urganch filiali</option>
+<option value="391">Toshkent axborot texnologiyalari universiteti Nukus filiali</option>
+<option value="392">Toshkent axborot texnologiyalari universiteti Farg&#x2018;ona filiali</option>
+<option value="393">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti Nukus filiali</option>
+<option value="394">Buxoro tabiiy resurslarni boshqarish instituti</option>
+<option value="395">O&#x2018;zbekiston jurnalistika va ommaviy kommunikatsiyalar universiteti</option>
+<option value="396">&quot;Ipak yo&#x2018;li&quot; turizm va madaniy meros xalqaro universiteti</option>
+<option value="397">Qarshi irrigatsiya va agrotexnologiyalar instituti</option>
+<option value="398">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Nukus filiali</option>
+<option value="399">O&#x2BB;zbekiston  davlat jismoniy tarbiya va sport universiteti Nukus filiali</option>
+<option value="401">O&#x2018;zbekiston Milliy universiteti Jizzax filiali</option>
+<option value="402">Toshkent kimyo-texnologiya instituti Yangiyer filiali</option>
+<option value="403">Andijon davlat pedagogika instituti</option>
+<option value="404">Buxoro davlat pedagogika instituti</option>
+<option value="405">Shahrisabz davlat pedagogika instituti</option>
+<option value="406">Samarqand davlat universiteti Kattaqo&#x2018;rg&#x2018;on filiali</option>
+<option value="407">O&#x2018;zbek milliy musiqa san&#x2BC;ati instituti</option>
+<option value="408">O&#x2018;zbekiston davlat konservatoriyasi Nukus filiali</option>
+<option value="409">O&#x2018;zbekiston davlat xoreografiya akademiyasi Urganch filiali</option>
+<option value="411">O&#x2018;zbekiston davlat jismoniy tarbiya va sport universiteti Farg&#x2018;ona filiali</option>
+<option value="412">Toshkent davlat iqtisodiyot universiteti To&#x2018;rtko&#x2018;l fakul&#x2BC;teti</option>
+<option value="413">Samarqand davlat chet tillar instituti Narpay &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="414">Samarqand davlat chet tillar instituti Payariq &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="415">Samarqand davlat universitetining O&#x2018;zbekiston-Finlyandiya pedagogika instituti</option>
+<option value="416">Fiskal Institut</option>
+<option value="419">Namangan davlat chet tillari instituti</option>
+<option value="420">Andijon davlat chet tillari instituti</option>
+<option value="421">Milliy estrada san&#x27;ati instituti</option>
+<option value="422">Qoraqalpoq davlat universiteti Chimboy  fakul&#x2BC;teti</option>
+<option value="423">Toshkent moliya instituti Andijon fakulteti</option>
+<option value="425">Guliston davlat pedagogika instituti</option>
+<option value="426">Namangan davlat pedagogika instituti</option>
+<option value="427">Namangan to&#x2018;qimachilik sanoati instituti</option>
+<option value="428">Urganch davlat pedagogika instituti</option>
+<option value="429">Oliy sport mahorati instituti </option>
+<option value="430">O&#x2018;zbekiston Respublikasi Huquqni muhofaza qilish akademiyasi</option>
+<option value="301">Andijon davlat universiteti</option>
+<option value="302">Toshkent davlat o&#x2018;zbek tili va adabiyoti universiteti</option>
+<option value="303">Andijon mashinasozlik instituti</option>
+<option value="304">Buxoro davlat universiteti</option>
+<option value="305">Buxoro muhandislik-texnologiya instituti</option>
+<option value="306">O&#x2018;zbekiston xalqaro islom akademiyasi</option>
+<option value="307">Guliston davlat universiteti</option>
+<option value="308">Jizzax politexnika instituti</option>
+<option value="309">Namangan davlat universiteti</option>
+<option value="310">Namangan muhandislik-qurilish instituti</option>
+<option value="311">Namangan muhandislik-texnologiya instituti</option>
+<option value="312">Samarqand davlat universiteti</option>
+<option value="313">Samarqand davlat arxitektura-qurilish universiteti</option>
+<option value="314">O&#x2018;zbekiston Milliy universiteti</option>
+<option value="315">Toshkent davlat texnika universiteti</option>
+<option value="317">Nukus konchilik instituti</option>
+<option value="318">Geologiya fanlari universiteti</option>
+<option value="319">Navoiy davlat konchilik va texnologiyalar universiteti</option>
+<option value="320">Toshkent davlat agrar universiteti Samarqand  filiali</option>
+<option value="322">Jamoat xavfsizligi universiteti</option>
+<option value="323">Andijon iqtisodiyot va qurilish instituti</option>
+<option value="324">Toshkent davlat iqtisodiyot universiteti</option>
+<option value="325">O&#x2018;zbekiston davlat xoreografiya akademiyasi</option>
+<option value="326">O&#x2018;zbekiston davlat jahon tillari universiteti</option>
+<option value="327">Toshkent davlat sharqshunoslik universiteti</option>
+<option value="328">Toshkent arxitektura-qurilish universiteti</option>
+<option value="329">Milliy rassomlik va dizayn instituti</option>
+<option value="331">Toshkent to&#x2018;qimachilik va yengil sanoat instituti</option>
+<option value="334">Toshkent davlat transport universiteti</option>
+<option value="335">Toshkent kimyo-texnologiya instituti Shahrisabz filiali</option>
+<option value="336">Toshkent moliya instituti</option>
+<option value="337">Toshkent kimyo-texnologiya instituti</option>
+<option value="338">Toshkent tibbiyot akademiyasi Urganch filiali</option>
+<option value="340">Termiz davlat universiteti</option>
+<option value="341">Urganch davlat universiteti</option>
+<option value="342">Farg&#x2018;ona davlat universiteti</option>
+<option value="343">Farg&#x2018;ona politexnika instituti</option>
+<option value="344">Farg&#x2018;ona jamoat salomatligi tibbiyot instituti</option>
+<option value="345">Qarshi davlat universiteti</option>
+<option value="346">Qoraqalpoq davlat universiteti</option>
+<option value="347">Samarqand davlat chet tillar instituti</option>
+<option value="348">Denov tadbirkorlik va pedagogika instituti</option>
+<option value="349">Qoraqalpog&#x2018;iston tibbiyot instituti</option>
+<option value="424">Oziq-ovqat texnologiyasi va muhandisligi xalqaro instituti</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select name="edType" id="EducTypeID1" class="form-control select2" style="width: 100%;" disabled onchange="drop3_1()">
+                                <option value="0" selected>
+                                    Выберите форму обучения
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit2" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Imtiyozlilar filter paneli-2 -- XQ-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv2" style="display:none">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select name="xqk" class="form-control select2" style="width: 100%;" id="tslist" onchange="drop4_1()">
+                                <option value="0" selected>
+                                    Ta'lim sohasini tanlang
+                                </option>
+                                <option value="1">Аniq va tabiiy fanlar</option>
+                                <option value="2">Texnika fanlari</option>
+                                <option value="3">Tibbiyot fanlari</option>
+                                <option value="4">Boshqa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select name="xq" class="form-control select2" style="width: 100%;" id="RegionID2" onchange="drop4_2()" disabled>
+                                <option value="0" selected>
+                                    Выберите регион
+                                </option>
+                            <option value="1">Qoraqalpog&#x2018;iston Respublikasi</option>
+<option value="2">Andijon viloyati</option>
+<option value="3">Namangan viloyati</option>
+<option value="4">Farg&#x2018;ona viloyati</option>
+<option value="5">Buxoro viloyati</option>
+<option value="6">Xorazm viloyati</option>
+<option value="7">Surxondaryo viloyati</option>
+<option value="8">Qashqadaryo viloyati</option>
+<option value="9">Jizzax viloyati</option>
+<option value="10">Navoiy viloyati</option>
+<option value="11">Samarqand viloyati</option>
+<option value="12">Sirdaryo viloyati</option>
+<option value="13">Toshkent viloyati</option>
+<option value="14">Toshkent shahri</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit3" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Imtiyozlilar filter paneli-3 Harbiy farzandlar-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv3" style="display:none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <select name="tash" class="form-control select2" style="width: 100%;" id="TashkID" onchange="drop5_1()">
+                                <option value="0" selected>
+                                    Vazirlikni tanlang
+                                </option>
+                            <option value="15">Mudofaa vazirligi (QK xodimi farzandi)</option>
+<option value="16">Ichki ishlar vazirligi (QK xodimi farzandi)</option>
+<option value="17">Favqulodda vaziyatlar vazirligi (QK xodimi farzandi)</option>
+<option value="18">Davlat xavfsizlik xizmati (QK xodimi farzandi)</option>
+<option value="19">O&#x2018;zbekiston Respublikasi Prezidentining davlat xavfsizlik xizmati (QK xodimi farzandi)</option>
+<option value="20">O&#x2018;zbekiston Respublikasi Elektron texnologiyalarni rivojlantirish markazi (QK xodimi farzandi)</option>
+<option value="21">Milliy gvardiya (MG xodimi farzandi)</option>
+<option value="22">Harbiy prokuratura (QK xodimi farzandi)</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit4" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Imtiyozlilar filter paneli-4 - OLis Cho'l-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv4" style="display:none">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select class="form-control select2" style="width: 100%;">
+                                <option value="0" selected>Barchasi</option>
+                                <option value="1">Qoraqalpog'iston Respublikasi</option>
+                                <option value="2">Andijon viloyati</option>
+                                <option value="3">Namangan viloyati</option>
+                                <option value="4">Farg`ona viloyati</option>
+                                <option value="5">Buxoro viloyati</option>
+                                <option value="6">Xorazm viloyati</option>
+                                <option value="7">Surxandaryo viloyati</option>
+                                <option value="8">Qashqadaryo viloyati</option>
+                                <option value="9">Jizzax viloyati</option>
+                                <option value="10">Navoiy viloyati</option>
+                                <option value="11">Samarqand viloyati</option>
+                                <option value="12">Sirdaryo viloyati</option>
+                                <option value="13">Toshkent viloyati</option>
+                                <option value="14">Toshkent shahri</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input value="true" name="olis" hidden style="display:none" />
+                            <select name="university" id="UniversityID4" class="form-control select2" style="width: 100%;" onchange="drop6_1()">
+                                <option value="0" selected>
+                                    Выберите ВУЗ
+                                </option>
+                            <option value="353">Navoiy davlat pedagogika instituti</option>
+<option value="358">Samarqand davlat universiteti Urgut filiali</option>
+<option value="360">Toshkent davlat iqtisodiyot universiteti Samarqand filiali</option>
+<option value="362">Buxoro tibbiyot instituti</option>
+<option value="363">&#x421;&#x430;&#x43C;&#x430;&#x440;&#x49B;&#x430;&#x43D;&#x434; &#x434;&#x430;&#x432;&#x43B;&#x430;&#x442; &#x442;&#x438;&#x431;&#x431;&#x438;&#x451;&#x442; &#x443;&#x43D;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x438;</option>
+<option value="372">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti</option>
+<option value="385">Samarqand iqtisodiyot va servis instituti</option>
+<option value="388">Toshkent axborot texnologiyalari universiteti Samarqand filiali</option>
+<option value="394">Buxoro tabiiy resurslarni boshqarish instituti</option>
+<option value="396">&quot;Ipak yo&#x2018;li&quot; turizm va madaniy meros xalqaro universiteti</option>
+<option value="404">Buxoro davlat pedagogika instituti</option>
+<option value="406">Samarqand davlat universiteti Kattaqo&#x2018;rg&#x2018;on filiali</option>
+<option value="413">Samarqand davlat chet tillar instituti Narpay &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="414">Samarqand davlat chet tillar instituti Payariq &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="415">Samarqand davlat universitetining O&#x2018;zbekiston-Finlyandiya pedagogika instituti</option>
+<option value="429">Oliy sport mahorati instituti </option>
+<option value="304">Buxoro davlat universiteti</option>
+<option value="305">Buxoro muhandislik-texnologiya instituti</option>
+<option value="312">Samarqand davlat universiteti</option>
+<option value="313">Samarqand davlat arxitektura-qurilish universiteti</option>
+<option value="319">Navoiy davlat konchilik va texnologiyalar universiteti</option>
+<option value="320">Toshkent davlat agrar universiteti Samarqand  filiali</option>
+<option value="347">Samarqand davlat chet tillar instituti</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <select name="edType" id="EducTypeID2" class="form-control select2" style="width: 100%;" disabled onchange="drop7_1()">
+                                <option value="0" selected>
+                                    Выберите форму обучения
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit5" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Imtiyozlilar filter paneli-5 IIV-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv5" style="display:none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input value="true" name="iiv" hidden style="display:none" />
+                            <select name="university" id="UniversityID3" class="form-control select2" style="width: 100%;" onchange="drop8_1()">
+                                <option value="0" selected>
+                                    Выберите ВУЗ
+                                </option>
+                            <option value="350">Jahon iqtisodiyoti va diplomatiya universiteti</option>
+<option value="351">Jizzax davlat pedagogika universiteti</option>
+<option value="352">Nukus davlat pedagogika instituti</option>
+<option value="353">Navoiy davlat pedagogika instituti</option>
+<option value="354">Chirchiq davlat pedagogika universiteti</option>
+<option value="355">Toshkent davlat pedagogika universiteti</option>
+<option value="356">Qo&#x2018;qon davlat pedagogika instituti</option>
+<option value="357">Termiz davlat pedagogika instituti</option>
+<option value="358">Samarqand davlat universiteti Urgut filiali</option>
+<option value="360">Toshkent davlat iqtisodiyot universiteti Samarqand filiali</option>
+<option value="361">Andijon davlat tibbiyot instituti</option>
+<option value="362">Buxoro tibbiyot instituti</option>
+<option value="363">&#x421;&#x430;&#x43C;&#x430;&#x440;&#x49B;&#x430;&#x43D;&#x434; &#x434;&#x430;&#x432;&#x43B;&#x430;&#x442; &#x442;&#x438;&#x431;&#x431;&#x438;&#x451;&#x442; &#x443;&#x43D;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x438;</option>
+<option value="364">Toshkent tibbiyot akademiyasi</option>
+<option value="365">Toshkent davlat texnika universiteti Olmaliq filiali</option>
+<option value="366">Toshkent davlat stomatologiya instituti</option>
+<option value="367">Toshkent  pediatriya tibbiyot instituti</option>
+<option value="368">Toshkent tibbiyot akademiyasi Termiz filiali</option>
+<option value="369">Toshkent farmatsevtika instituti</option>
+<option value="370">Toshkent davlat texnika universiteti Qo&#x2BB;qon filiali</option>
+<option value="371">Andijon qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="372">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti</option>
+<option value="373">Toshkent davlat agrar universiteti</option>
+<option value="374">Termiz agrotexnologiyalar va innovatsion rivojlanish instituti</option>
+<option value="375">Qarshi muhandislik - iqtisodiyot instituti</option>
+<option value="376">&quot;Toshkent irrigatsiya va qishloq xo&#x2018;jaligini mexanizatsiyalash muhandislari instituti&quot; milliy tadqiqotlar universiteti</option>
+<option value="377">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti</option>
+<option value="378">O&#x2018;zbekiston  davlat konservatoriyasi</option>
+<option value="379">Toshkent davlat texnika universiteti Termiz filiali</option>
+<option value="380">Toshkent axborot texnologiyalari universiteti</option>
+<option value="381">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti  Farg&#x2018;ona mintaqaviy filiali</option>
+<option value="382">O&#x2018;zbekiston  davlat jismoniy tarbiya va sport universiteti</option>
+<option value="384">Toshkent davlat yuridik universiteti</option>
+<option value="385">Samarqand iqtisodiyot va servis instituti</option>
+<option value="386">Qoraqalpog&#x2018;iston qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="387">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Toshkent filiali</option>
+<option value="388">Toshkent axborot texnologiyalari universiteti Samarqand filiali</option>
+<option value="389">Toshkent axborot texnologiyalari universiteti Qarshi filiali</option>
+<option value="390">Toshkent axborot texnologiyalari universiteti Urganch filiali</option>
+<option value="391">Toshkent axborot texnologiyalari universiteti Nukus filiali</option>
+<option value="392">Toshkent axborot texnologiyalari universiteti Farg&#x2018;ona filiali</option>
+<option value="393">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti Nukus filiali</option>
+<option value="394">Buxoro tabiiy resurslarni boshqarish instituti</option>
+<option value="395">O&#x2018;zbekiston jurnalistika va ommaviy kommunikatsiyalar universiteti</option>
+<option value="396">&quot;Ipak yo&#x2018;li&quot; turizm va madaniy meros xalqaro universiteti</option>
+<option value="397">Qarshi irrigatsiya va agrotexnologiyalar instituti</option>
+<option value="398">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Nukus filiali</option>
+<option value="399">O&#x2BB;zbekiston  davlat jismoniy tarbiya va sport universiteti Nukus filiali</option>
+<option value="401">O&#x2018;zbekiston Milliy universiteti Jizzax filiali</option>
+<option value="402">Toshkent kimyo-texnologiya instituti Yangiyer filiali</option>
+<option value="403">Andijon davlat pedagogika instituti</option>
+<option value="404">Buxoro davlat pedagogika instituti</option>
+<option value="405">Shahrisabz davlat pedagogika instituti</option>
+<option value="406">Samarqand davlat universiteti Kattaqo&#x2018;rg&#x2018;on filiali</option>
+<option value="407">O&#x2018;zbek milliy musiqa san&#x2BC;ati instituti</option>
+<option value="408">O&#x2018;zbekiston davlat konservatoriyasi Nukus filiali</option>
+<option value="409">O&#x2018;zbekiston davlat xoreografiya akademiyasi Urganch filiali</option>
+<option value="411">O&#x2018;zbekiston davlat jismoniy tarbiya va sport universiteti Farg&#x2018;ona filiali</option>
+<option value="412">Toshkent davlat iqtisodiyot universiteti To&#x2018;rtko&#x2018;l fakul&#x2BC;teti</option>
+<option value="413">Samarqand davlat chet tillar instituti Narpay &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="414">Samarqand davlat chet tillar instituti Payariq &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="415">Samarqand davlat universitetining O&#x2018;zbekiston-Finlyandiya pedagogika instituti</option>
+<option value="416">Fiskal Institut</option>
+<option value="419">Namangan davlat chet tillari instituti</option>
+<option value="420">Andijon davlat chet tillari instituti</option>
+<option value="421">Milliy estrada san&#x27;ati instituti</option>
+<option value="422">Qoraqalpoq davlat universiteti Chimboy  fakul&#x2BC;teti</option>
+<option value="423">Toshkent moliya instituti Andijon fakulteti</option>
+<option value="425">Guliston davlat pedagogika instituti</option>
+<option value="426">Namangan davlat pedagogika instituti</option>
+<option value="427">Namangan to&#x2018;qimachilik sanoati instituti</option>
+<option value="428">Urganch davlat pedagogika instituti</option>
+<option value="429">Oliy sport mahorati instituti </option>
+<option value="430">O&#x2018;zbekiston Respublikasi Huquqni muhofaza qilish akademiyasi</option>
+<option value="301">Andijon davlat universiteti</option>
+<option value="302">Toshkent davlat o&#x2018;zbek tili va adabiyoti universiteti</option>
+<option value="303">Andijon mashinasozlik instituti</option>
+<option value="304">Buxoro davlat universiteti</option>
+<option value="305">Buxoro muhandislik-texnologiya instituti</option>
+<option value="306">O&#x2018;zbekiston xalqaro islom akademiyasi</option>
+<option value="307">Guliston davlat universiteti</option>
+<option value="308">Jizzax politexnika instituti</option>
+<option value="309">Namangan davlat universiteti</option>
+<option value="310">Namangan muhandislik-qurilish instituti</option>
+<option value="311">Namangan muhandislik-texnologiya instituti</option>
+<option value="312">Samarqand davlat universiteti</option>
+<option value="313">Samarqand davlat arxitektura-qurilish universiteti</option>
+<option value="314">O&#x2018;zbekiston Milliy universiteti</option>
+<option value="315">Toshkent davlat texnika universiteti</option>
+<option value="317">Nukus konchilik instituti</option>
+<option value="318">Geologiya fanlari universiteti</option>
+<option value="319">Navoiy davlat konchilik va texnologiyalar universiteti</option>
+<option value="320">Toshkent davlat agrar universiteti Samarqand  filiali</option>
+<option value="322">Jamoat xavfsizligi universiteti</option>
+<option value="323">Andijon iqtisodiyot va qurilish instituti</option>
+<option value="324">Toshkent davlat iqtisodiyot universiteti</option>
+<option value="325">O&#x2018;zbekiston davlat xoreografiya akademiyasi</option>
+<option value="326">O&#x2018;zbekiston davlat jahon tillari universiteti</option>
+<option value="327">Toshkent davlat sharqshunoslik universiteti</option>
+<option value="328">Toshkent arxitektura-qurilish universiteti</option>
+<option value="329">Milliy rassomlik va dizayn instituti</option>
+<option value="331">Toshkent to&#x2018;qimachilik va yengil sanoat instituti</option>
+<option value="334">Toshkent davlat transport universiteti</option>
+<option value="335">Toshkent kimyo-texnologiya instituti Shahrisabz filiali</option>
+<option value="336">Toshkent moliya instituti</option>
+<option value="337">Toshkent kimyo-texnologiya instituti</option>
+<option value="338">Toshkent tibbiyot akademiyasi Urganch filiali</option>
+<option value="340">Termiz davlat universiteti</option>
+<option value="341">Urganch davlat universiteti</option>
+<option value="342">Farg&#x2018;ona davlat universiteti</option>
+<option value="343">Farg&#x2018;ona politexnika instituti</option>
+<option value="344">Farg&#x2018;ona jamoat salomatligi tibbiyot instituti</option>
+<option value="345">Qarshi davlat universiteti</option>
+<option value="346">Qoraqalpoq davlat universiteti</option>
+<option value="347">Samarqand davlat chet tillar instituti</option>
+<option value="348">Denov tadbirkorlik va pedagogika instituti</option>
+<option value="349">Qoraqalpog&#x2018;iston tibbiyot instituti</option>
+<option value="424">Oziq-ovqat texnologiyasi va muhandisligi xalqaro instituti</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit6" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Imtiyozlilar filter paneli-5 BOJ-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv5_3" style="display:none">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input value="true" name="boj" hidden style="display:none" />
+                            <select name="university" id="UniversityID3_3" class="form-control select2" style="width: 100%;" onchange="drop8_4()">
+                                <option value="0" selected>
+                                    Выберите ВУЗ
+                                </option>
+                            <option value="350">Jahon iqtisodiyoti va diplomatiya universiteti</option>
+<option value="351">Jizzax davlat pedagogika universiteti</option>
+<option value="352">Nukus davlat pedagogika instituti</option>
+<option value="353">Navoiy davlat pedagogika instituti</option>
+<option value="354">Chirchiq davlat pedagogika universiteti</option>
+<option value="355">Toshkent davlat pedagogika universiteti</option>
+<option value="356">Qo&#x2018;qon davlat pedagogika instituti</option>
+<option value="357">Termiz davlat pedagogika instituti</option>
+<option value="358">Samarqand davlat universiteti Urgut filiali</option>
+<option value="360">Toshkent davlat iqtisodiyot universiteti Samarqand filiali</option>
+<option value="361">Andijon davlat tibbiyot instituti</option>
+<option value="362">Buxoro tibbiyot instituti</option>
+<option value="363">&#x421;&#x430;&#x43C;&#x430;&#x440;&#x49B;&#x430;&#x43D;&#x434; &#x434;&#x430;&#x432;&#x43B;&#x430;&#x442; &#x442;&#x438;&#x431;&#x431;&#x438;&#x451;&#x442; &#x443;&#x43D;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x438;</option>
+<option value="364">Toshkent tibbiyot akademiyasi</option>
+<option value="365">Toshkent davlat texnika universiteti Olmaliq filiali</option>
+<option value="366">Toshkent davlat stomatologiya instituti</option>
+<option value="367">Toshkent  pediatriya tibbiyot instituti</option>
+<option value="368">Toshkent tibbiyot akademiyasi Termiz filiali</option>
+<option value="369">Toshkent farmatsevtika instituti</option>
+<option value="370">Toshkent davlat texnika universiteti Qo&#x2BB;qon filiali</option>
+<option value="371">Andijon qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="372">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti</option>
+<option value="373">Toshkent davlat agrar universiteti</option>
+<option value="374">Termiz agrotexnologiyalar va innovatsion rivojlanish instituti</option>
+<option value="375">Qarshi muhandislik - iqtisodiyot instituti</option>
+<option value="376">&quot;Toshkent irrigatsiya va qishloq xo&#x2018;jaligini mexanizatsiyalash muhandislari instituti&quot; milliy tadqiqotlar universiteti</option>
+<option value="377">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti</option>
+<option value="378">O&#x2018;zbekiston  davlat konservatoriyasi</option>
+<option value="379">Toshkent davlat texnika universiteti Termiz filiali</option>
+<option value="380">Toshkent axborot texnologiyalari universiteti</option>
+<option value="381">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti  Farg&#x2018;ona mintaqaviy filiali</option>
+<option value="382">O&#x2018;zbekiston  davlat jismoniy tarbiya va sport universiteti</option>
+<option value="384">Toshkent davlat yuridik universiteti</option>
+<option value="385">Samarqand iqtisodiyot va servis instituti</option>
+<option value="386">Qoraqalpog&#x2018;iston qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="387">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Toshkent filiali</option>
+<option value="388">Toshkent axborot texnologiyalari universiteti Samarqand filiali</option>
+<option value="389">Toshkent axborot texnologiyalari universiteti Qarshi filiali</option>
+<option value="390">Toshkent axborot texnologiyalari universiteti Urganch filiali</option>
+<option value="391">Toshkent axborot texnologiyalari universiteti Nukus filiali</option>
+<option value="392">Toshkent axborot texnologiyalari universiteti Farg&#x2018;ona filiali</option>
+<option value="393">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti Nukus filiali</option>
+<option value="394">Buxoro tabiiy resurslarni boshqarish instituti</option>
+<option value="395">O&#x2018;zbekiston jurnalistika va ommaviy kommunikatsiyalar universiteti</option>
+<option value="396">&quot;Ipak yo&#x2018;li&quot; turizm va madaniy meros xalqaro universiteti</option>
+<option value="397">Qarshi irrigatsiya va agrotexnologiyalar instituti</option>
+<option value="398">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Nukus filiali</option>
+<option value="399">O&#x2BB;zbekiston  davlat jismoniy tarbiya va sport universiteti Nukus filiali</option>
+<option value="401">O&#x2018;zbekiston Milliy universiteti Jizzax filiali</option>
+<option value="402">Toshkent kimyo-texnologiya instituti Yangiyer filiali</option>
+<option value="403">Andijon davlat pedagogika instituti</option>
+<option value="404">Buxoro davlat pedagogika instituti</option>
+<option value="405">Shahrisabz davlat pedagogika instituti</option>
+<option value="406">Samarqand davlat universiteti Kattaqo&#x2018;rg&#x2018;on filiali</option>
+<option value="407">O&#x2018;zbek milliy musiqa san&#x2BC;ati instituti</option>
+<option value="408">O&#x2018;zbekiston davlat konservatoriyasi Nukus filiali</option>
+<option value="409">O&#x2018;zbekiston davlat xoreografiya akademiyasi Urganch filiali</option>
+<option value="411">O&#x2018;zbekiston davlat jismoniy tarbiya va sport universiteti Farg&#x2018;ona filiali</option>
+<option value="412">Toshkent davlat iqtisodiyot universiteti To&#x2018;rtko&#x2018;l fakul&#x2BC;teti</option>
+<option value="413">Samarqand davlat chet tillar instituti Narpay &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="414">Samarqand davlat chet tillar instituti Payariq &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="415">Samarqand davlat universitetining O&#x2018;zbekiston-Finlyandiya pedagogika instituti</option>
+<option value="416">Fiskal Institut</option>
+<option value="419">Namangan davlat chet tillari instituti</option>
+<option value="420">Andijon davlat chet tillari instituti</option>
+<option value="421">Milliy estrada san&#x27;ati instituti</option>
+<option value="422">Qoraqalpoq davlat universiteti Chimboy  fakul&#x2BC;teti</option>
+<option value="423">Toshkent moliya instituti Andijon fakulteti</option>
+<option value="425">Guliston davlat pedagogika instituti</option>
+<option value="426">Namangan davlat pedagogika instituti</option>
+<option value="427">Namangan to&#x2018;qimachilik sanoati instituti</option>
+<option value="428">Urganch davlat pedagogika instituti</option>
+<option value="429">Oliy sport mahorati instituti </option>
+<option value="430">O&#x2018;zbekiston Respublikasi Huquqni muhofaza qilish akademiyasi</option>
+<option value="301">Andijon davlat universiteti</option>
+<option value="302">Toshkent davlat o&#x2018;zbek tili va adabiyoti universiteti</option>
+<option value="303">Andijon mashinasozlik instituti</option>
+<option value="304">Buxoro davlat universiteti</option>
+<option value="305">Buxoro muhandislik-texnologiya instituti</option>
+<option value="306">O&#x2018;zbekiston xalqaro islom akademiyasi</option>
+<option value="307">Guliston davlat universiteti</option>
+<option value="308">Jizzax politexnika instituti</option>
+<option value="309">Namangan davlat universiteti</option>
+<option value="310">Namangan muhandislik-qurilish instituti</option>
+<option value="311">Namangan muhandislik-texnologiya instituti</option>
+<option value="312">Samarqand davlat universiteti</option>
+<option value="313">Samarqand davlat arxitektura-qurilish universiteti</option>
+<option value="314">O&#x2018;zbekiston Milliy universiteti</option>
+<option value="315">Toshkent davlat texnika universiteti</option>
+<option value="317">Nukus konchilik instituti</option>
+<option value="318">Geologiya fanlari universiteti</option>
+<option value="319">Navoiy davlat konchilik va texnologiyalar universiteti</option>
+<option value="320">Toshkent davlat agrar universiteti Samarqand  filiali</option>
+<option value="322">Jamoat xavfsizligi universiteti</option>
+<option value="323">Andijon iqtisodiyot va qurilish instituti</option>
+<option value="324">Toshkent davlat iqtisodiyot universiteti</option>
+<option value="325">O&#x2018;zbekiston davlat xoreografiya akademiyasi</option>
+<option value="326">O&#x2018;zbekiston davlat jahon tillari universiteti</option>
+<option value="327">Toshkent davlat sharqshunoslik universiteti</option>
+<option value="328">Toshkent arxitektura-qurilish universiteti</option>
+<option value="329">Milliy rassomlik va dizayn instituti</option>
+<option value="331">Toshkent to&#x2018;qimachilik va yengil sanoat instituti</option>
+<option value="334">Toshkent davlat transport universiteti</option>
+<option value="335">Toshkent kimyo-texnologiya instituti Shahrisabz filiali</option>
+<option value="336">Toshkent moliya instituti</option>
+<option value="337">Toshkent kimyo-texnologiya instituti</option>
+<option value="338">Toshkent tibbiyot akademiyasi Urganch filiali</option>
+<option value="340">Termiz davlat universiteti</option>
+<option value="341">Urganch davlat universiteti</option>
+<option value="342">Farg&#x2018;ona davlat universiteti</option>
+<option value="343">Farg&#x2018;ona politexnika instituti</option>
+<option value="344">Farg&#x2018;ona jamoat salomatligi tibbiyot instituti</option>
+<option value="345">Qarshi davlat universiteti</option>
+<option value="346">Qoraqalpoq davlat universiteti</option>
+<option value="347">Samarqand davlat chet tillar instituti</option>
+<option value="348">Denov tadbirkorlik va pedagogika instituti</option>
+<option value="349">Qoraqalpog&#x2018;iston tibbiyot instituti</option>
+<option value="424">Oziq-ovqat texnologiyasi va muhandisligi xalqaro instituti</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit6_3" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Xotin qizlar paneli-5 yillik-->
+        <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+            <div id="ImtDiv5_1" style="display:none">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input value="true" name="xq5" hidden style="display:none" />
+                            <select name="university" id="UniversityID3_1" class="form-control select2" style="width: 100%;" onchange="drop8_2()">
+                                <option value="0" selected>
+                                    Выберите ВУЗ
+                                </option>
+                            <option value="350">Jahon iqtisodiyoti va diplomatiya universiteti</option>
+<option value="351">Jizzax davlat pedagogika universiteti</option>
+<option value="352">Nukus davlat pedagogika instituti</option>
+<option value="353">Navoiy davlat pedagogika instituti</option>
+<option value="354">Chirchiq davlat pedagogika universiteti</option>
+<option value="355">Toshkent davlat pedagogika universiteti</option>
+<option value="356">Qo&#x2018;qon davlat pedagogika instituti</option>
+<option value="357">Termiz davlat pedagogika instituti</option>
+<option value="358">Samarqand davlat universiteti Urgut filiali</option>
+<option value="360">Toshkent davlat iqtisodiyot universiteti Samarqand filiali</option>
+<option value="361">Andijon davlat tibbiyot instituti</option>
+<option value="362">Buxoro tibbiyot instituti</option>
+<option value="363">&#x421;&#x430;&#x43C;&#x430;&#x440;&#x49B;&#x430;&#x43D;&#x434; &#x434;&#x430;&#x432;&#x43B;&#x430;&#x442; &#x442;&#x438;&#x431;&#x431;&#x438;&#x451;&#x442; &#x443;&#x43D;&#x438;&#x432;&#x435;&#x440;&#x441;&#x438;&#x442;&#x435;&#x442;&#x438;</option>
+<option value="364">Toshkent tibbiyot akademiyasi</option>
+<option value="365">Toshkent davlat texnika universiteti Olmaliq filiali</option>
+<option value="366">Toshkent davlat stomatologiya instituti</option>
+<option value="367">Toshkent  pediatriya tibbiyot instituti</option>
+<option value="368">Toshkent tibbiyot akademiyasi Termiz filiali</option>
+<option value="369">Toshkent farmatsevtika instituti</option>
+<option value="370">Toshkent davlat texnika universiteti Qo&#x2BB;qon filiali</option>
+<option value="371">Andijon qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="372">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti</option>
+<option value="373">Toshkent davlat agrar universiteti</option>
+<option value="374">Termiz agrotexnologiyalar va innovatsion rivojlanish instituti</option>
+<option value="375">Qarshi muhandislik - iqtisodiyot instituti</option>
+<option value="376">&quot;Toshkent irrigatsiya va qishloq xo&#x2018;jaligini mexanizatsiyalash muhandislari instituti&quot; milliy tadqiqotlar universiteti</option>
+<option value="377">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti</option>
+<option value="378">O&#x2018;zbekiston  davlat konservatoriyasi</option>
+<option value="379">Toshkent davlat texnika universiteti Termiz filiali</option>
+<option value="380">Toshkent axborot texnologiyalari universiteti</option>
+<option value="381">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti  Farg&#x2018;ona mintaqaviy filiali</option>
+<option value="382">O&#x2018;zbekiston  davlat jismoniy tarbiya va sport universiteti</option>
+<option value="384">Toshkent davlat yuridik universiteti</option>
+<option value="385">Samarqand iqtisodiyot va servis instituti</option>
+<option value="386">Qoraqalpog&#x2018;iston qishloq xo&#x2018;jaligi va agrotexnologiyalar instituti</option>
+<option value="387">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Toshkent filiali</option>
+<option value="388">Toshkent axborot texnologiyalari universiteti Samarqand filiali</option>
+<option value="389">Toshkent axborot texnologiyalari universiteti Qarshi filiali</option>
+<option value="390">Toshkent axborot texnologiyalari universiteti Urganch filiali</option>
+<option value="391">Toshkent axborot texnologiyalari universiteti Nukus filiali</option>
+<option value="392">Toshkent axborot texnologiyalari universiteti Farg&#x2018;ona filiali</option>
+<option value="393">O&#x2018;zbekiston davlat san&#x2BC;at va madaniyat instituti Nukus filiali</option>
+<option value="394">Buxoro tabiiy resurslarni boshqarish instituti</option>
+<option value="395">O&#x2018;zbekiston jurnalistika va ommaviy kommunikatsiyalar universiteti</option>
+<option value="396">&quot;Ipak yo&#x2018;li&quot; turizm va madaniy meros xalqaro universiteti</option>
+<option value="397">Qarshi irrigatsiya va agrotexnologiyalar instituti</option>
+<option value="398">Samarqand davlat veterinariya meditsinasi, chorvachilik va biotexnologiyalar universiteti Nukus filiali</option>
+<option value="399">O&#x2BB;zbekiston  davlat jismoniy tarbiya va sport universiteti Nukus filiali</option>
+<option value="401">O&#x2018;zbekiston Milliy universiteti Jizzax filiali</option>
+<option value="402">Toshkent kimyo-texnologiya instituti Yangiyer filiali</option>
+<option value="403">Andijon davlat pedagogika instituti</option>
+<option value="404">Buxoro davlat pedagogika instituti</option>
+<option value="405">Shahrisabz davlat pedagogika instituti</option>
+<option value="406">Samarqand davlat universiteti Kattaqo&#x2018;rg&#x2018;on filiali</option>
+<option value="407">O&#x2018;zbek milliy musiqa san&#x2BC;ati instituti</option>
+<option value="408">O&#x2018;zbekiston davlat konservatoriyasi Nukus filiali</option>
+<option value="409">O&#x2018;zbekiston davlat xoreografiya akademiyasi Urganch filiali</option>
+<option value="411">O&#x2018;zbekiston davlat jismoniy tarbiya va sport universiteti Farg&#x2018;ona filiali</option>
+<option value="412">Toshkent davlat iqtisodiyot universiteti To&#x2018;rtko&#x2018;l fakul&#x2BC;teti</option>
+<option value="413">Samarqand davlat chet tillar instituti Narpay &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="414">Samarqand davlat chet tillar instituti Payariq &quot;Xorijiy tillar&quot; fakul&#x2BC;teti</option>
+<option value="415">Samarqand davlat universitetining O&#x2018;zbekiston-Finlyandiya pedagogika instituti</option>
+<option value="416">Fiskal Institut</option>
+<option value="419">Namangan davlat chet tillari instituti</option>
+<option value="420">Andijon davlat chet tillari instituti</option>
+<option value="421">Milliy estrada san&#x27;ati instituti</option>
+<option value="422">Qoraqalpoq davlat universiteti Chimboy  fakul&#x2BC;teti</option>
+<option value="423">Toshkent moliya instituti Andijon fakulteti</option>
+<option value="425">Guliston davlat pedagogika instituti</option>
+<option value="426">Namangan davlat pedagogika instituti</option>
+<option value="427">Namangan to&#x2018;qimachilik sanoati instituti</option>
+<option value="428">Urganch davlat pedagogika instituti</option>
+<option value="429">Oliy sport mahorati instituti </option>
+<option value="430">O&#x2018;zbekiston Respublikasi Huquqni muhofaza qilish akademiyasi</option>
+<option value="301">Andijon davlat universiteti</option>
+<option value="302">Toshkent davlat o&#x2018;zbek tili va adabiyoti universiteti</option>
+<option value="303">Andijon mashinasozlik instituti</option>
+<option value="304">Buxoro davlat universiteti</option>
+<option value="305">Buxoro muhandislik-texnologiya instituti</option>
+<option value="306">O&#x2018;zbekiston xalqaro islom akademiyasi</option>
+<option value="307">Guliston davlat universiteti</option>
+<option value="308">Jizzax politexnika instituti</option>
+<option value="309">Namangan davlat universiteti</option>
+<option value="310">Namangan muhandislik-qurilish instituti</option>
+<option value="311">Namangan muhandislik-texnologiya instituti</option>
+<option value="312">Samarqand davlat universiteti</option>
+<option value="313">Samarqand davlat arxitektura-qurilish universiteti</option>
+<option value="314">O&#x2018;zbekiston Milliy universiteti</option>
+<option value="315">Toshkent davlat texnika universiteti</option>
+<option value="317">Nukus konchilik instituti</option>
+<option value="318">Geologiya fanlari universiteti</option>
+<option value="319">Navoiy davlat konchilik va texnologiyalar universiteti</option>
+<option value="320">Toshkent davlat agrar universiteti Samarqand  filiali</option>
+<option value="322">Jamoat xavfsizligi universiteti</option>
+<option value="323">Andijon iqtisodiyot va qurilish instituti</option>
+<option value="324">Toshkent davlat iqtisodiyot universiteti</option>
+<option value="325">O&#x2018;zbekiston davlat xoreografiya akademiyasi</option>
+<option value="326">O&#x2018;zbekiston davlat jahon tillari universiteti</option>
+<option value="327">Toshkent davlat sharqshunoslik universiteti</option>
+<option value="328">Toshkent arxitektura-qurilish universiteti</option>
+<option value="329">Milliy rassomlik va dizayn instituti</option>
+<option value="331">Toshkent to&#x2018;qimachilik va yengil sanoat instituti</option>
+<option value="334">Toshkent davlat transport universiteti</option>
+<option value="335">Toshkent kimyo-texnologiya instituti Shahrisabz filiali</option>
+<option value="336">Toshkent moliya instituti</option>
+<option value="337">Toshkent kimyo-texnologiya instituti</option>
+<option value="338">Toshkent tibbiyot akademiyasi Urganch filiali</option>
+<option value="340">Termiz davlat universiteti</option>
+<option value="341">Urganch davlat universiteti</option>
+<option value="342">Farg&#x2018;ona davlat universiteti</option>
+<option value="343">Farg&#x2018;ona politexnika instituti</option>
+<option value="344">Farg&#x2018;ona jamoat salomatligi tibbiyot instituti</option>
+<option value="345">Qarshi davlat universiteti</option>
+<option value="346">Qoraqalpoq davlat universiteti</option>
+<option value="347">Samarqand davlat chet tillar instituti</option>
+<option value="348">Denov tadbirkorlik va pedagogika instituti</option>
+<option value="349">Qoraqalpog&#x2018;iston tibbiyot instituti</option>
+<option value="424">Oziq-ovqat texnologiyasi va muhandisligi xalqaro instituti</option>
+</select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <select id="EducTypeID2_1" class="form-control select2" style="width: 100%;" disabled onchange="drop8_3()">
+                                <option value="0" selected>
+                                    Выберите форму обучения
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <input type="submit" class="input form-control btn-search" disabled
+                                   id="Submit6_1" value="Поиск" style="background-color: #EEEEEE; color: black; width: 100%;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+
+        <!--Qo'shimcha panel-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card collapsed-card" id="collaps1">
+                    <div class="card-header">
+                        <h5 class="card-title">Дополнительный</h5>
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                            <div class="row">
+                                <div class="col-sm-6 col-6">
+                                    <div class="description-block">
+                                        <a class="btn btn-block btn-default" href="/BallVuz23/Index">
+                                            Проходные баллы по ВОУ
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-6">
+                                    <div class="description-block">
+                                        <a class="btn btn-block btn-default" href="/Imtiyoz23/Index">
+                                            Проходной балл для льготников
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <div class="description-block">
+                                    <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+                                        <div class="description-block">
+                                            <button type="submit" id="btnPrez" name="prez" value="1" class="btn btn-block btn-default"><i class="fa fa-star" style="color: gold"></i> TOP 250 </button>
+                                        </div>
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="description-block">
+                                    <a class="btn btn-block btn-default" href="/Home2023/Statistika">
+                                        <i class="fa fa-chart-bar"></i>
+                                        Статистика
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-6">
+                                <div class="description-block">
+                                    <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+                                        <div class="description-block">
+                                            <button type="submit" id="btnNotC" name="notC" value="1" class="btn btn-block btn-default">
+                                                <i class="fa fa-user-clock"></i> Неоцененные
+                                            </button>
+                                        </div>
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-6">
+                                <div class="description-block">
+                                    <form form method="post" class="form-horizontal" action="/Home2023/AfterFilter">
+                                        <div class="description-block">
+                                            <button type="submit" id="btnbans" name="bans" value="1" class="btn btn-block btn-default"><i class="fa fa-minus-circle" style="color:red"></i> Отстраненные от тестовых испытаний</button>
+                                        </div>
+                                    <input name="__RequestVerificationToken" type="hidden" value="CfDJ8KT4Bo0BTQxKkda2RU6eBFurfoXpwpJnQKgss28SHnJ5D2Jz_anAOvY1GXfEpcqA_5rYmSMELNndmkV1-i9yeRe-H0cQw7p6s0qtJkmPYpOEz8PqeZwiu_-s9yasxF5lKIkIQafDeNPDl4jlrdoPEio" /></form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Table-->
+
+    <div class="card-body">
+        <div class="table-responsive">
+
+            <!-- Xotin-qizlar div info -->
+
+            <!-- Nogironlar div info -->
+
+
+            <!-- Mehribonlik uyi div info -->
+
+
+            <!-- Harbiy imtiyoz div info -->
+
+            <!-- Olis cho'l div info -->
+
+
+            <!-- IIV farzandlari div info -->
+            
+            <!-- Bojxona farzandlari div info -->
+
+            <!-- Xotin-qizlar - 5 yillik div info -->
+
+            <!-- Harbiy farzandlari div info -->
+
+            <table class="table table-striped table-hover table-bold">
+                <tr>
+                    <th style="text-align:center">
+                        ID абитуриента
+                    </th>
+                    <th>
+                        Ф.И.О.
+                    </th>
+                    <th style="text-align:center">
+                        Направление
+                    </th>
+                    <th style="text-align:center">
+                        Высшее образовательное учреждение
+                    </th>
+                    <th style="text-align:center">
+                        Набранный балл
+                    </th>
+                    <th style="text-align:center">
+                        Язык обучения
+                    </th>
+                    <th style="text-align:center">
+                        Форма обучения
+                    </th>
+                    <th style="text-align:center">
+                        <span>
+                            Подробнее
+                        </span>
+                    </th>
+                </tr>
+
+                            <tr class="table-warning">
+                                    <td style="text-align: center">4870355</td>
+                                <td>IBROXIMOV I. M.</td>
+                                <td style="text-align: center">Xalqaro iqtisodiyot va menejment (mintaqalar va faoliyat yo&#x2018;nalishlari bo&#x2018;yicha)</td>
+                                <td style="text-align: center">Jahon iqtisodiyoti va diplomatiya universiteti</td>
+                                <td style="text-align: center">174,4</td>
+                                <td style="text-align: center">O&#x27;zbekcha</td>
+                                <td style="text-align: center">Kunduzgi</td>
+                                <td style="text-align: center">
+                                    <a class="btn btn-info" href="/Home2023/Details/1bc96cda3a07c4219978f9e0c7809735"><span>Подробнее</span></a>
+                                </td>
+                            </tr>
+        </table>
+
+        </div>
+            <div class="alert" style="background-color: #bee5eb;">
+                <text>
+                    Страница: <b> 1 </b> | Количество информации на текущей странице: <b>
+
+1
+                    </b> | Общее количество данных найдено: <b> 1 </b>
+                    <span style="float: right">Konkurs: <b> 0 </b> </span>
+                </text>
+            </div>
+        <div class="table-responsive">
+
+                <div class="row" style="padding-bottom:1%;">
+                    <div class="col-xl-2">
+                        <center>
+                            <text style="color: blue;"><b>|</b></text> - Imtiyoz mavjud
+                        </center>
+                    </div>
+                    <div class="col-xl-2">
+                        <center>
+                            <i class="fa fa-square" style="color: #8fd19e;"></i> -Государственный грант
+                        </center>
+                    </div>
+                    <div class="col-lg-2">
+                        <center>
+                            <i class="fa fa-square" style="color: #ffdf7e;"></i> -Платный контракт
+                        </center>
+                    </div>
+                    <div class="col-lg-2">
+                        <center>
+                            <i class="fa fa-square" style="color: #ed969e;"></i> -Не рекомендован в студенты
+                        </center>
+                    </div>
+                    <div class="col-lg-2">
+                        <center>
+                            <i class="fa fa-square" style="color: #d6d8db;"></i> -Не рекомендуется по этому направлению
+                        </center>
+                    </div>
+                    <div class="col-lg-2">
+                        <center>
+                            <i class="fa fa-minus-circle" style="color: red;"></i> -Отстранен от тестовых испытаний
+                        </center>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+		var countChange = 0, UniverVal = 0, FacVal = 0, langVal = 0, typeVal = 0;
+
+		$(document).ready(function () {
+			$('#RegionID').change(function () {
+				$.ajax({
+					type: 'POST',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetUniversities",
+					dataType: "json",
+					data: {
+						RegionID: $("#RegionID").val()
+					},
+
+					success: function (data) {
+						$("#UniversityID").empty();
+						var items = "<option value='0'>Выберите ВУЗ</option>";
+						$('#UniversityID').html(items);
+						$.each(data, function (i, university) {
+							items += "<option value='" + university.value + "'>" + university.text + "</option>";
+						});
+						$('#UniversityID').html(items);
+
+						if (UniverVal > 0 && countChange != 0) {
+							$("#UniversityID").val(UniverVal).change();
+							$("#UniversityID").prop("disabled", false);
+						}
+					}
+				});
+			});
+		});
+    </script>
+    <script>
+		$(document).ready(function () {
+			$('#UniversityID').change(function () {
+				$.ajax({
+					type: 'POST',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetFaculties",
+					dataType: "json",
+					data: {
+						UniversityID: $("#UniversityID").val()
+					},
+
+					success: function (data) {
+						$("#FacultyID").empty();
+						var items = "<option value='0'>Выберите направление</option>";
+						$('#FacultyID').html(items);
+						$.each(data, function (i, faculty) {
+							items += "<option value='" + faculty.value + "'>" + faculty.text + "</option>";
+						});
+						$('#FacultyID').html(items);
+						if (FacVal > 0 && countChange != 0) {
+							$("#FacultyID").val(FacVal).change();
+							$("#FacultyID").prop("disabled", false);
+							if (langVal == 0) {
+								countChange = 0;
+								$("#EducLangId").prop("disabled", false);
+							}
+						}
+					}
+				});
+			});
+		});
+    </script>
+    <script>
+		$(document).ready(function () {
+			$('#FacultyID').change(function () {
+				$.ajax({
+					type: 'POST',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetLanguage",
+
+					data: {
+						UniversityID: $("#UniversityID").val(),
+						FacultyID: $("#FacultyID").val()
+					},
+
+					success: function (data) {
+						$("#EducLangId").empty();
+						var items = "<option value='0'>Выберите язык обучения</option>";
+						$('#EducLangId').html(items);
+						$.each(data, function (i, faculty) {
+							items += "<option value='" + faculty.value + "'>" + faculty.text + "</option>";
+						});
+						$('#EducLangId').html(items);
+						if (langVal > 0 && countChange != 0) {
+							$("#EducLangId").val(langVal).change();
+							$("#EducLangId").prop("disabled", false);
+							if (typeVal == 0) {
+								countChange = 0;
+								$("#EducTypeID").prop("disabled", false);
+							}
+						}
+					}
+				});
+			});
+		});
+    </script>
+    <script>
+		$(document).ready(function () {
+			$('#EducLangId').change(function () {
+
+				$.ajax({
+
+					type: 'POST',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetType",
+
+					data: {
+						UniversityID: $("#UniversityID").val(),
+						FacultyID: $("#FacultyID").val(),
+						EducLangId: $("#EducLangId").val()
+					},
+
+
+					success: function (data) {
+						$("#EducTypeID").empty();
+						var items = "<option value='0'>Выберите форму обучения</option>";
+						$('#EducTypeID').html(items);
+						$.each(data, function (i, faculty) {
+							items += "<option value='" + faculty.value + "'>" + faculty.text + "</option>";
+						});
+						$('#EducTypeID').html(items);
+						if (typeVal > 0 && countChange != 0) {
+							$("#EducTypeID").val(typeVal).change();
+							$("#EducTypeID").prop("disabled", false);
+							countChange = 0;
+						}
+					}
+				});
+			});
+		});
+    </script>
+    <script>
+		$(document).ready(function () {
+			$('#UniversityID1').change(function () {
+
+				$.ajax({
+
+					type: 'POST',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetType1",
+
+					data: {
+						UniversityID: $("#UniversityID1").val()},
+
+
+					success: function (data) {
+						$("#EducTypeID1").empty();
+						var items = "<option value='0'>Выберите форму обучения</option>";
+						$('#EducTypeID1').html(items);
+						$.each(data, function (i, result) {
+							items += "<option value='" + result.value + "'>" + result.text + "</option>";
+						});
+						$('#EducTypeID1').html(items);
+						if (typeVal > 0 && countChange != 0) {
+							$("#EducTypeID1").val(typeVal).change();
+							$("#EducTypeID1").prop("disabled", false);
+							document.getElementById("ImtDiv1").style.display = "block";
+							countChange = 0;
+						}
+					}
+				});
+			});
+		});
+    </script>
+    <script>
+		$(document).ready(function () {
+			$('#UniversityID4').change(function () {
+				$.ajax({
+
+					type: 'GET',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetType1",
+
+					data: {
+						UniversityID: $("#UniversityID4").val()},
+
+
+					success: function (data) {
+						$("#EducTypeID2").empty();
+						var items = "<option value='0'>Выберите форму обучения</option>";
+						$('#EducTypeID2').html(items);
+						$.each(data, function (i, result) {
+							items += "<option value='" + result.value + "'>" + result.text + "</option>";
+						});
+						$('#EducTypeID2').html(items);
+						if (typeVal > 0 && countChange != 0) {
+							$("#EducTypeID2").val(typeVal).change();
+							$("#EducTypeID2").prop("disabled", false);
+							document.getElementById("ImtDiv4").style.display = "block";
+							countChange = 0;
+						}
+					}
+				});
+			});
+		});
+    </script>
+
+    <script>
+		$(document).ready(function () {
+			$('#UniversityID3_1').change(function () {
+				$.ajax({
+
+					type: 'GET',
+					contentType: 'application/x-www-form-urlencoded; charset=UTF-8',
+					url: "/Home2023/GetType1",
+
+					data: {
+						UniversityID: $("#UniversityID3_1").val()},
+
+					success: function (data) {
+						$("#EducTypeID2_1").empty();
+						var items = "<option value='0'>Выберите форму обучения</option>";
+						$('#EducTypeID2_1').html(items);
+						$.each(data, function (i, result) {
+							items += "<option value='" + result.value + "'>" + result.text + "</option>";
+						});
+						$('#EducTypeID2_1').html(items);
+						if (typeVal > 0 && countChange != 0) {
+							$("#EducTypeID2_1").val(typeVal).change();
+							$("#EducTypeID2_1").prop("disabled", false);
+							document.getElementById("ImtDiv5_1").style.display = "block";
+							countChange = 0;
+						}
+					}
+				});
+			});
+		});
+    </script>
+
+    <script>
+        function dropAll() {
+            var list1 = document.getElementById("RegionID");
+            var list2 = document.getElementById("UniversityID");
+            var list3 = document.getElementById("FacultyID");
+            var list4 = document.getElementById("EducLangId");
+            var list5 = document.getElementById("EducTypeID");
+            list1.selectedIndex = "0";
+            list2.selectedIndex = "0";
+            list3.selectedIndex = "0";
+            list4.selectedIndex = "0";
+            list5.selectedIndex = "0";
+        }
+        function drop1() {
+            if (countChange == 0) {
+                var list2 = document.getElementById("UniversityID");
+                var list3 = document.getElementById("FacultyID");
+                var list4 = document.getElementById("EducLangId");
+                var list5 = document.getElementById("EducTypeID");
+
+                list2.selectedIndex = "0";
+                list2.disabled = false;
+
+                list3.selectedIndex = "0";
+                list3.disabled = true;
+
+                list4.selectedIndex = "0";
+                list4.disabled = true;
+
+                list5.selectedIndex = "0";
+                list5.disabled = true;
+            }
+        }
+
+        function drop2() {
+            if (countChange == 0) {
+
+                var list3 = document.getElementById("FacultyID");
+                var list4 = document.getElementById("EducLangId");
+                var list5 = document.getElementById("EducTypeID");
+
+                list3.selectedIndex = "0";
+                list3.disabled = false;
+
+                list4.selectedIndex = "0";
+                list4.disabled = true;
+
+                list5.selectedIndex = "0";
+                list5.disabled = true;
+            }
+        }
+
+        function drop3() {
+            if (countChange == 0) {
+                var list4 = document.getElementById("EducLangId");
+                var list5 = document.getElementById("EducTypeID");
+
+                list4.selectedIndex = "0";
+                list4.disabled = false;
+                list5.selectedIndex = "0";
+                list5.disabled = true;
+            }
+        }
+
+        function drop4() {
+            if (countChange == 0) {
+                var list5 = document.getElementById("EducTypeID");
+
+                list5.selectedIndex = "0";
+                list5.disabled = false;
+            }
+        }
+
+    </script>
+
+    <script>
+		function changeImt() {
+			typeImt = document.getElementById("typeImtiyoz")
+
+			if (typeImt.options[typeImt.selectedIndex].text == "Лица с инвалидностью") {
+				typeImt.name = "nog";
+			}
+			if (typeImt.options[typeImt.selectedIndex].text == "Дети без родителей") {
+				typeImt.name = "muy";
+			}
+			if (typeImt.options[typeImt.selectedIndex].text == "Имеющие военную рекомендацию") {
+				typeImt.name = "soldier";
+			}
+			if (typeImt.options[typeImt.selectedIndex].text == "Женщины") {
+				typeImt.name = "xq";
+			}
+			var list1 = document.getElementById("UniversityID1");
+			list1.selectedIndex = "0";
+			list1.disabled = false;
+		}
+
+		function drop2_1() {
+			if (countChange == 0) {
+				var list2 = document.getElementById("EducTypeID1");
+
+				list2.selectedIndex = "0";
+				list2.disabled = false;
+			}
+		}
+		function drop6_1() {
+			if (countChange == 0) {
+				var list2 = document.getElementById("EducTypeID1");
+
+				list2.selectedIndex = "0";
+				list2.disabled = false;
+			}
+		}
+
+		function drop3_1() {
+
+			if (countChange == 0) {
+				var list = document.getElementById("EducTypeID1");
+				var btn = document.getElementById("Submit2");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+		}
+
+		function drop4_1() {
+			if (countChange == 0) {
+				var list1 = document.getElementById("tslist");
+				var list2 = document.getElementById("RegionID2");
+				var btn = document.getElementById("Submit3");
+
+				if (list1.options[list1.selectedIndex].value != 0) {
+					list2.disabled = false;
+					list2.selectedIndex = "0";
+				}
+				else {
+					list2.disabled = true;
+				}
+			}
+		}
+
+		function drop4_2() {
+			if (countChange == 0) {
+				var list = document.getElementById("RegionID2");
+				var btn = document.getElementById("Submit3");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+		}
+
+		function drop5_1() {
+			if (countChange == 0) {
+				var list = document.getElementById("TashkID");
+				var btn = document.getElementById("Submit4");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+		}
+
+		function drop6_1() {
+			if (countChange == 0) {
+				var list2 = document.getElementById("EducTypeID2");
+
+				list2.selectedIndex = "0";
+				list2.disabled = false;
+			}
+		}
+
+		function drop8_1() {
+			if (countChange == 0) {
+				var list = document.getElementById("UniversityID3");
+				var btn = document.getElementById("Submit6");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+        }
+
+        //BOJXONACHI
+        function drop8_4() {
+            if (countChange == 0) {
+                var list = document.getElementById("UniversityID3_3");
+                var btn = document.getElementById("Submit6_3");
+
+                if (list.options[list.selectedIndex].value != 0) {
+                    btn.disabled = false;
+                    btn.style.color = "white";
+                    btn.style.backgroundColor = "#00BBEC";
+                }
+                else {
+                    btn.disabled = true;
+                    btn.style.color = "black";
+                    btn.style.backgroundColor = "#EEEEEE";
+                }
+            }
+        }
+
+
+		function drop8_2() {
+			if (countChange == 0) {
+				var list = document.getElementById("UniversityID3_1");
+				var list1 = document.getElementById("EducTypeID2_1");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					list1.selectedIndex = "0";
+					list1.disabled = false;
+				}
+				else {
+					list1.selectedIndex = "0";
+					list1.disabled = true;
+				}
+			}
+		}
+
+		function drop8_3() {
+			if (countChange == 0) {
+				var list = document.getElementById("EducTypeID2_1");
+				var btn = document.getElementById("Submit6_1");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+        }
+
+		function drop9_1() {
+			if (countChange == 0) {
+				var list = document.getElementById("listOfTS");
+				var btn = document.getElementById("Submit7");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+		}
+
+
+		function drop7_1() {
+			if (countChange == 0) {
+				var list = document.getElementById("EducTypeID2");
+				var btn = document.getElementById("Submit5");
+
+				if (list.options[list.selectedIndex].value != 0) {
+					btn.disabled = false;
+					btn.style.color = "white";
+					btn.style.backgroundColor = "#00BBEC";
+				}
+				else {
+					btn.disabled = true;
+					btn.style.color = "black";
+					btn.style.backgroundColor = "#EEEEEE";
+				}
+			}
+		}
+
+
+		function inputXQ() {
+			document.getElementById("inpXQ").value = "1"
+		}
+
+		//Nogironlar
+		function OpenImtPanel1() {
+			document.getElementById("ImtDiv1").style.display = "block";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+			document.getElementById("ImtInp").name = "nog";
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnNog.style.backgroundColor = "#5bc0de";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+
+		}
+
+		//Mehribonlik uyi
+		function OpenImtPanel2() {
+			document.getElementById("ImtDiv1").style.display = "block";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+			document.getElementById("ImtInp").name = "muy";
+
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnMuy.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+		}
+
+		//Harbiy imtiyoz
+		function OpenImtPanel3() {
+			document.getElementById("ImtDiv1").style.display = "block";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+			document.getElementById("ImtInp").name = "soldier";
+
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnSoldier.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+
+		}
+
+		//Xotin-qizlar
+		function OpenImtPanel4() {
+			document.getElementById("ImtDiv1").style.display = "none";
+			document.getElementById("ImtDiv2").style.display = "block";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+			document.getElementById("ImtInp").name = "";
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnXQ.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+
+		}
+
+		//Ichki ishlar farzandlar
+
+		function OpenImtPanel5() {
+			document.getElementById("ImtDiv5").style.display = "block";
+			document.getElementById("ImtDiv1").style.display = "none";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnIIVF.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+        }
+
+        //Bojxonachilar farzandlar
+
+		function OpenImtPanel9() {
+			document.getElementById("ImtDiv5_3").style.display = "block";
+			document.getElementById("ImtDiv1").style.display = "none";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+			var btnBF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+                btnBF.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnBF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+		}
+
+		//Harbiy farzandlar
+
+		function OpenImtPanel6() {
+			document.getElementById("ImtDiv1").style.display = "none";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "block";
+			document.getElementById("ImtDiv4").style.display = "none";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+			document.getElementById("ImtInp").name = "";
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+			var btnOlis = document.getElementById("btnOlis");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+
+			if (count == 1) {
+				btnHF.style.backgroundColor = "#5bc0de";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+		}
+
+		//Olis-cho'l
+		function OpenImtPanel7() {
+			document.getElementById("ImtDiv1").style.display = "none";
+			document.getElementById("ImtDiv2").style.display = "none";
+			document.getElementById("ImtDiv3").style.display = "none";
+			document.getElementById("ImtDiv4").style.display = "block";
+			document.getElementById("ImtDiv5").style.display = "none";
+			document.getElementById("ImtDiv5_1").style.display = "none";
+			document.getElementById("ImtDiv5_3").style.display = "none";
+
+			document.getElementById("ImtInp").name = "";
+
+
+			var count = 1;
+			var btnNog = document.getElementById("btnNog");
+			var btnMuy = document.getElementById("btnMuy");
+			var btnSoldier = document.getElementById("btnSoldier");
+			var btnXQ = document.getElementById("btnXQ");
+			var btnXQ5 = document.getElementById("btnXQ5");
+			var btnIIVF = document.getElementById("btnIIVF");
+			var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+			if (count == 1) {
+				btnOlis.style.backgroundColor = "#5bc0de";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 0;
+			}
+			else {
+				btnOlis.style.backgroundColor = "#FFFFFF";
+				btnNog.style.backgroundColor = "#FFFFFF";
+				btnMuy.style.backgroundColor = "#FFFFFF";
+				btnSoldier.style.backgroundColor = "#FFFFFF";
+				btnXQ.style.backgroundColor = "#FFFFFF";
+				btnIIVF.style.backgroundColor = "#FFFFFF";
+				btnHF.style.backgroundColor = "#FFFFFF";
+				btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+				count = 1;
+			}
+		}
+
+        //Xotin qizlar - 5 yillik staj
+
+        function OpenImtPanel8() {
+            document.getElementById("ImtDiv5_1").style.display = "block";
+            document.getElementById("ImtDiv5").style.display = "none";
+            document.getElementById("ImtDiv1").style.display = "none";
+            document.getElementById("ImtDiv2").style.display = "none";
+            document.getElementById("ImtDiv3").style.display = "none";
+            document.getElementById("ImtDiv4").style.display = "none";
+            document.getElementById("ImtDiv5_3").style.display = "none";
+
+
+            var count = 1;
+            var btnNog = document.getElementById("btnNog");
+            var btnMuy = document.getElementById("btnMuy");
+            var btnSoldier = document.getElementById("btnSoldier");
+            var btnXQ = document.getElementById("btnXQ");
+            var btnXQ5 = document.getElementById("btnXQ5");
+            var btnIIVF = document.getElementById("btnIIVF");
+            var btnHF = document.getElementById("btnHF");
+            var btnBOJF = document.getElementById("btnBOJF");
+
+
+            if (count == 1) {
+                btnIIVF.style.backgroundColor = "#FFFFFF";
+                btnNog.style.backgroundColor = "#FFFFFF";
+                btnMuy.style.backgroundColor = "#FFFFFF";
+                btnSoldier.style.backgroundColor = "#FFFFFF";
+                btnXQ5.style.backgroundColor = "#5bc0de";
+                btnHF.style.backgroundColor = "#FFFFFF";
+                btnOlis.style.backgroundColor = "#FFFFFF";
+                btnXQ.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+                count = 0;
+            }
+            else {
+                btnNog.style.backgroundColor = "#FFFFFF";
+                btnMuy.style.backgroundColor = "#FFFFFF";
+                btnSoldier.style.backgroundColor = "#FFFFFF";
+                btnXQ.style.backgroundColor = "#FFFFFF";
+                btnIIVF.style.backgroundColor = "#FFFFFF";
+                btnHF.style.backgroundColor = "#FFFFFF";
+                btnXQ5.style.backgroundColor = "#FFFFFF";
+                btnOlis.style.backgroundColor = "#FFFFFF";
+                btnBOJF.style.backgroundColor = "#FFFFFF";
+
+                count = 1;
+            }
+        }
+    </script>
+    <span class="output" id="textUrl" hidden></span>
+    <span id="imttype" hidden>empty</span>
+    <script>
+        $(document).ready(function () {
+            //Start Imtiyoz check
+            if ($('#imttype').text().indexOf('nog') > -1) {
+                $("#btnNog").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnNog").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#NogIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('muy') > -1) {
+                $("#btnMuy").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnMuy").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#MuyIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('soldier') > -1) {
+                $("#btnSoldier").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnSoldier").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#SoldIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('iiv') > -1) {
+                $("#btnIIVF").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnIIVF").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#IIVIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('xq_5') > -1) {
+                $("#btnXQ5").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnXQ5").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#xq5_Izoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text() == 'xq') {
+                $("#btnXQ").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnXQ").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#XqIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('tash') > -1) {
+                $("#btnHF").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnHF").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#HarbiyFIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('olis') > -1) {
+                $("#btnOlis").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnOlis").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#OlisIzoh").removeAttr('hidden');
+            }
+            if ($('#imttype').text().indexOf('boj') > -1) {
+                $("#btnBOJF").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnBOJF").css('background-color', '#5bc0de');
+                $("#collaps").removeClass('card collapsed-card').addClass('card');
+                $("#BOJIzoh").removeAttr('hidden');
+            }
+            // End Imtiyoz
+            if ($('#textUrl').text().indexOf('prez=1') > -1) {
+                $("#btnPrez").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnPrez").css('background-color', '#5bc0de');
+                $("#collaps1").removeClass('card collapsed-card').addClass('card');
+            }
+            if ($('#textUrl').text().indexOf('notC=1') > -1) {
+                $("#btnNotC").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnNotC").css('background-color', '#5bc0de');
+                $("#collaps1").removeClass('card collapsed-card').addClass('card');
+            }
+            if ($('#textUrl').text().indexOf('bans=1') > -1) {
+                $("#btnbans").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnbans").css('background-color', '#5bc0de');
+                $("#collaps1").removeClass('card collapsed-card').addClass('card');
+            }
+            if ($('#textUrl').text().indexOf('covid=23') > -1) {
+                $("#btnCovid").removeClass('btn btn-block btn-default').addClass('btn btn-block');
+                $("#btnCovid").css('background-color', '#5bc0de');
+                $("#collaps1").removeClass('card collapsed-card').addClass('card');
+            }
+        });
+    </script>
+
+    <script>
+        //Function filter saver
+        $(document).ready(function () {
+            currLoc = $(location).attr('href');
+            document.querySelector('.output').textContent = currLoc;
+            //Standart qidiruv filter
+            if ($('#textUrl').text().indexOf('region=') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var str = $('#textUrl').text();
+                var searchStrLen = searchStr.length;
+
+                $('#nav-tab2').addClass('show active');
+                $('#nav-tab1').removeClass('show active');
+
+                $('#nav-home-tab').removeClass('active');
+                $('#nav-profile-tab').addClass('active');
+
+
+                var region, xqk;
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                region = str.substring(IndexArray[0] + 8, IndexArray[1]);
+
+                UniverVal = str.substring(IndexArray[1] + 12, IndexArray[2]);
+
+                FacVal = str.substring(IndexArray[2] + 9, IndexArray[3]);
+
+                if (IndexArray.length <= 4) {
+                    langVal = str.substring(IndexArray[3] + 8, str.length);
+                }
+                else {
+                    if ($('#textUrl').text().indexOf('edType=') > -1) {
+                        typeVal = str.substring(IndexArray[4] + 8, IndexArray[5]);
+                    }
+                    langVal = str.substring(IndexArray[3] + 8, IndexArray[4]);
+                }
+
+                $("#RegionID").val(region).change();
+                countChange = 1;
+            }
+
+            //Olis cho'l
+            if ($('#textUrl').text().indexOf('olis=True') > -1 || $('#textUrl').text().indexOf('olis=true') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var str = $('#textUrl').text();
+                var searchStrLen = searchStr.length;
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                UniverVal = str.substring(IndexArray[0] + 12, IndexArray[1]);
+
+                typeVal = str.substring(IndexArray[1] + 8, IndexArray[2]);
+
+                $("#UniversityID4").val(UniverVal).change();
+                countChange = 1;
+            }
+
+
+            //Nogironlar //Mehribonlik uyi //Harbiy tavsiyanoma
+            if ($('#textUrl').text().indexOf('nog=True') > -1
+                || $('#textUrl').text().indexOf('nog=true') > -1
+                || $('#textUrl').text().indexOf('muy=true') > -1
+                || $('#textUrl').text().indexOf('muy=True') > -1
+                || $('#textUrl').text().indexOf('soldier=true') > -1
+                || $('#textUrl').text().indexOf('soldier=True') > -1
+            ) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var str = $('#textUrl').text();
+                var searchStrLen = searchStr.length;
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                UniverVal = str.substring(IndexArray[0] + 12, IndexArray[1]);
+
+                typeVal = str.substring(IndexArray[1] + 8, IndexArray[2]);
+
+                $("#UniversityID1").val(UniverVal).change();
+                countChange = 1;
+            }
+
+            //Xotin qizlar
+            /*if ($('#textUrl').text().indexOf('xqk=1') > -1
+                || $('#textUrl').text().indexOf('xqk=2') > -1
+                || $('#textUrl').text().indexOf('xqk=3') > -1
+                || $('#textUrl').text().indexOf('xqk=4') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var searchStrLen = searchStr.length;
+
+                var str = $('#textUrl').text();
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                if (IndexArray.length == 0) {
+                    var searchStr = "xqk";
+                    while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                        IndexArray.push(index);
+                        startIndex = index + searchStrLen;
+                        xqk = str.substring(IndexArray[0] + 4, IndexArray[str.length]);
+
+                    }
+                }
+
+                else {
+                    xqk = str.substring(IndexArray[3] + 4, IndexArray[4]);
+                }
+                console.log(xqk);
+
+                $("#RegionID2").val(region).change();
+                document.getElementById("ImtDiv2").style.display = "block";
+            }*/
+
+
+            //IIV farzandlari
+            if ($('#textUrl').text().indexOf('iiv=True') > -1 || $('#textUrl').text().indexOf('iiv=true') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var str = $('#textUrl').text();
+                var searchStrLen = searchStr.length;
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                UniverVal = str.substring(IndexArray[0] + 12, IndexArray[1]);
+
+                $("#UniversityID3").val(UniverVal).change();
+                document.getElementById("ImtDiv5").style.display = "block";
+            }
+            
+            //Bojxona farzandlari
+            if ($('#textUrl').text().indexOf('boj=True') > -1 || $('#textUrl').text().indexOf('boj=true') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var str = $('#textUrl').text();
+                var searchStrLen = searchStr.length;
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                UniverVal = str.substring(IndexArray[0] + 12, IndexArray[1]);
+
+                $("#UniversityID3_3").val(UniverVal).change();
+                document.getElementById("ImtDiv5_3").style.display = "block";
+            }
+
+            //Harbiy farzandlar
+            if ($('#textUrl').text().indexOf('tash=15') > -1
+                || $('#textUrl').text().indexOf('tash=16') > -1
+                || $('#textUrl').text().indexOf('tash=17') > -1
+                || $('#textUrl').text().indexOf('tash=18') > -1
+                || $('#textUrl').text().indexOf('tash=19') > -1
+                || $('#textUrl').text().indexOf('tash=20') > -1
+                || $('#textUrl').text().indexOf('tash=21') > -1) {
+                var startIndex = 0, index, IndexArray = [];
+                var searchStr = "&";
+                var searchStrLen = searchStr.length;
+
+                var str = $('#textUrl').text();
+
+                while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                    IndexArray.push(index);
+                    startIndex = index + searchStrLen;
+                }
+
+                if (IndexArray.length == 0) {
+                    var searchStr = "tash";
+                    while ((index = str.indexOf(searchStr, startIndex)) > -1) {
+                        IndexArray.push(index);
+                        startIndex = index + searchStrLen;
+                        vaz = str.substring(IndexArray[0] + 5, IndexArray[str.length]);
+                    }
+                }
+
+                else {
+                    vaz = str.substring(IndexArray[4] + 6, IndexArray[5]);
+                }
+
+                $("#TashkID").val(vaz).change();
+                document.getElementById("ImtDiv3").style.display = "block";
+                countChange = 1;
+            }
+
+            hideURLParams();
+        });
+
+        function getURLParameter(name) {
+            return decodeURI((RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1]);
+        }
+        function hideURLParams() {
+            //Parameters to hide (ie ?success=value, ?error=value, etc)
+            var hide = ['success', 'error'];
+            for (var h in hide) {
+                if (getURLParameter(h)) {
+                    history.replaceState(null, document.getElementsByTagName("title")[0].innerHTML, window.location.pathname);
+                }
+            }
+        }
+
+    </script>
+
+    <script>
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#7FFF00"
+                count = 0;
+            }
+        }
+    </script>
+
+    <!-- Modal oyna -->
+
+    <script>
+        var f = document.getElementById("FacultyID");
+        var modal = document.getElementById("Modal");
+        var btn = document.getElementById("Submit1");
+        var btnClose = document.getElementById("closeModel");
+        var inp = document.getElementById("inputID");
+
+
+        btn.onclick = function () {
+            if (inp.value == "" && f.selectedIndex == "0") {
+                modal.style.display = "block";
+                return false;
+                inp.focus();
+            }
+        }
+
+        btnClose.onclick = function () {
+            modal.style.display = "none";
+            inp.focus();
+        }
+    </script>
+
+    <script>
+        function Show1d() {
+            document.getElementById('divXQ1').style.display = 'block';
+            document.getElementById('divXQ2').style.display = 'none';
+
+            document.getElementById('xq_btn1').classList.add('active');
+            document.getElementById('xq_btn1').classList.add('btn-info');
+            document.getElementById('xq_btn2').classList.remove('btn-info');
+            document.getElementById('xq_btn2').classList.add('btn-default');
+            document.getElementById('xq_btn2').classList.remove('active');
+            document.getElementById('XQ_RB1').checked = true;
+            document.getElementById('XQ_RB2').checked = false;
+        }
+        function Show2d() {
+            document.getElementById('divXQ2').style.display = 'block';
+            document.getElementById('divXQ1').style.display = 'none';
+
+            document.getElementById('xq_btn2').classList.add('active');
+            document.getElementById('xq_btn2').classList.add('btn-info');
+            document.getElementById('xq_btn1').classList.remove('btn-info');
+            document.getElementById('xq_btn1').classList.add('btn-default');
+            document.getElementById('xq_btn1').classList.remove('active');
+            document.getElementById('XQ_RB2').checked = true;
+            document.getElementById('XQ_RB1').checked = false;
+        }
+    </script>
+</body>
+</html>
+
+                            <footer class="card-footer">
+                                <div class="effect claudio">
+                                    <ul class="social-media">
+                                        <li class="telegram">
+                                            <a href="https://t.me/BaholashUz" title="Telegram">
+                                                <i class="fab fa-telegram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="youtube">
+                                            <a href="https://www.youtube.com/dtmuzb" title="YouTube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li class="instagram">
+                                            <a href="https://www.instagram.com/dtmuzb/" title="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li class="facebook">
+                                            <a href="https://www.facebook.com/dtmuzb" title="Facebook">
+                                                <i class="fab fa-facebook"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <strong>
+                                    <a class="Bot" id="TelBot" title="Mandat Telegram BOT" href="#" onclick="randomLink()"><i class="fab fa-telegram"></i>Mandat Telegram BOT</a>
+                                </strong>
+                                <p class="text-justify" id="footer">
+                                    Вся информация на сайте защищена в соответствии с законодательством Республики Узбекистан, а также законодательством об авторском праве и смежных правах. Следует обязательно указывать источник информации при полном или частичном использовании любых материалов, опубликованных на данном сайте (www.uzbmb.uz) - 7
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="/lib/jquery/dist/jquery.min.js"></script>
+
+    <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- ./wrapper -->
+    <!-- jQuery -->
+    <script src="/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="/plugins/select2/js/select2.full.min.js"></script>
+    <!-- Bootstrap4 Duallistbox -->
+    <script src="/plugins/bootstrap4-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+    <!-- InputMask -->
+    <script src="/plugins/moment/moment.min.js"></script>
+    <script src="/plugins/inputmask/min/jquery.inputmask.bundle.min.js"></script>
+    <!-- date-range-picker -->
+    <script src="/plugins/daterangepicker/daterangepicker.js"></script>
+    <!-- bootstrap color picker -->
+    <script src="/plugins/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+    <!-- Tempusdominus Bootstrap 4 -->
+    <script src="/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- Bootstrap Switch -->
+    <script src="/plugins/bootstrap-switch/js/bootstrap-switch.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="/dist/js/adminlte.min.js"></script>
+
+    <!-- Page script -->
+    <script>
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            })
+        })
+    </script>
+
+    <span class="output" id="textUrl" hidden></span>
+    <script>
+        $(document).ready(function () {
+            currLoc = $(location).attr('href');
+            document.querySelector('.output').textContent = currLoc;
+
+            //2023
+            if ($('#textUrl').text().indexOf('/Home2023/Index') > -1 || $('#textUrl').text().indexOf('/Home2023/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2023");
+                $("#dateB3").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Home2023/Details/') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2023 | Batafsil");
+                $("#dateB3").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+
+            if ($('#textUrl').text().indexOf('/Transfer2023/DetailsP/') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2023 | Batafsil");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer2023/Statistika') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2023 | Statistika");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer2023/Transfer') > -1 || $('#textUrl').text().indexOf('/Transfer2023/AfterFilter') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2023");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+
+
+            //2022
+            if ($('#textUrl').text().indexOf('/Home2022/Index') > -1 || $('#textUrl').text().indexOf('/Home2022/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2022");
+                $("#dateB2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Home2022/Details/') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2022 | Batafsil");
+                $("#dateB2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Litsey/Litsey') > -1 || $('#textUrl').text().indexOf('/Litsey/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Litsey-2022");
+                $("#dateL").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Home2022/Statistika') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2022 | Statistika");
+                $("#dateB2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer2022/DetailsP/') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2022 | Batafsil");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer2022/Statistika') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2022 | Statistika");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer2022/Transfer') > -1 || $('#textUrl').text().indexOf('/Transfer2022/AfterFilter') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2022");
+                $("#dateP2").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+
+            //2021
+            if ($('#textUrl').text().indexOf('/Home/Details/') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2021 | Batafsil");
+                $("#dateB").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Home/Index') > -1 || $('#textUrl').text().indexOf('/Home/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2021");
+                $("#dateB").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+
+            if ($('#textUrl').text().indexOf('/Home/Statistika') > -1) {
+                $("#path").text("Asosiy | Bakalavr-2021 | Statistika");
+                $("#dateB").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Magistr/DetailsM/') > -1) {
+                $("#path").text("Asosiy | Magistratura-2021 | Batafsil");
+                $("#dateM").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Magistr/Magistr') > -1 || $('#textUrl').text().indexOf('/Magistr/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Magistratura-2021");
+                $("#dateM").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer/DetailsP/') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2021 | Batafsil");
+                $("#dateP").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Litsey/DetailsL/') > -1) {
+                $("#path").text("Asosiy | Akademik litsey-2022 | Batafsil");
+                $("#dateL").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer/Statistika') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2021 | Statistika");
+                $("#dateP").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Transfer/Transfer') > -1 || $('#textUrl').text().indexOf('/Transfer/AfterFilter') > -1) {
+                $("#path").text("Asosiy | O'qishni ko'chirish-2021");
+                $("#dateP").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Texnikum/DetailsT/') > -1) {
+                $("#path").text("Asosiy | Texnikum-2021 | Batafsil");
+                $("#dateT").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+            if ($('#textUrl').text().indexOf('/Texnikum/Texnikum') > -1 || $('#textUrl').text().indexOf('/Texnikum/AfterFilter') > -1) {
+                $("#path").text("Asosiy | Texnikum-2021");
+                $("#dateT").removeAttr('hidden');
+                $("#testr").attr("hidden", true);
+            }
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        function randomLink() {
+            var arrayLinks = ["https://t.me/e_dtm_mandatbot", "https://t.me/e_dtm_mandat1bot", "https://t.me/e_dtm_mandat2bot", "https://t.me/e_dtm_mandat3bot", "https://t.me/e_dtm_mandat4bot"];
+            var link = document.getElementById("TelBot");
+            var link2 = document.getElementById("TelBot1");
+            const rndInt = Math.floor(Math.random() * 5)
+            console.log(rndInt)
+            link.setAttribute('href', arrayLinks[rndInt]);
+            link2.setAttribute('href', arrayLinks[rndInt]);
+        }
+    </script>
+
+    
+
+</body>
+</html>

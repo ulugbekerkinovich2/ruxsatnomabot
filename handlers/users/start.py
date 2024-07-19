@@ -125,6 +125,7 @@ class DtmState(StatesGroup):
 
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message, state: FSMContext):
+    await state.finish()
     token = await get_token()
     access = token.get('access')
     await state.update_data(token=access)
@@ -167,7 +168,7 @@ async def phone(message: types.Message, state: FSMContext):
         subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
         
         # Create the second button
-        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', callback_data='dtm_result')
+        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', web_app=WebAppInfo(url=web_app_url))
         
         # Add both buttons to the inline keyboard
         inline_kb.add(subscribe_button, exam_score_button)
@@ -218,7 +219,9 @@ async def check_subscription(callback_query: types.CallbackQuery, state: FSMCont
         sent_message = await bot.send_message(user_id, "Rahmat 😎, endi botdan to'liq foydalanishingiz mumkin.")
         inline_kb = InlineKeyboardMarkup(row_width=1)
         subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
-        inline_kb.add(subscribe_button)
+        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', web_app=WebAppInfo(url=web_app_url))
+        # Add both buttons to the inline keyboard
+        inline_kb.add(subscribe_button, exam_score_button)
 
         await bot.send_message(user_id, "Abituriyent ruxsatnomasini olish uchun quyidagi tugmani bosing:", reply_markup=inline_kb)
     else:
