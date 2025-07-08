@@ -109,7 +109,7 @@ from aiogram.dispatcher.filters.builtin import CommandStart
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 from keyboards.default.menuKeyboard import contact_keyboard, dtm_keyboard
 from loader import dp, bot
-from data.config import CHANNEL_ID, CHANNEL_USERNAME, web_app_url
+from data.config import CHANNEL_ID, CHANNEL_USERNAME, web_app_url, creative_url
 from aiogram.dispatcher import FSMContext
 from states.userstate import Form
 from utils.send_req import get_token, create_profile
@@ -125,6 +125,7 @@ class DtmState(StatesGroup):
 
 @dp.message_handler(CommandStart())
 async def bot_start(message: types.Message, state: FSMContext):
+    print(CHANNEL_ID)
     await state.finish()
     token = await get_token()
     access = token.get('access')
@@ -165,10 +166,13 @@ async def phone(message: types.Message, state: FSMContext):
     if user_status['status'] in ['member', 'administrator', 'creator']:
         sent_message = await bot.send_message(user_id, "Rahmat 😎, endi botdan to'liq foydalanishingiz mumkin.", reply_markup=types.ReplyKeyboardRemove())
         inline_kb = InlineKeyboardMarkup(row_width=1)
-        subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
+
+        subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', web_app=WebAppInfo(url="https://my.uzbmb.uz/allow/bachelor-allow"))
+        # subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
+        # creative_url_ = InlineKeyboardButton('🎨Kasbiy (ijodiy) imtihon uchun ruxsatnoma', url=creative_url)
         
         # Create the second button
-        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', web_app=WebAppInfo(url=web_app_url))
+        exam_score_button = InlineKeyboardButton('🎨Kasbiy (ijodiy) imtihon uchun ruxsatnoma', web_app=WebAppInfo(url=creative_url))
         
         # Add both buttons to the inline keyboard
         inline_kb.add(subscribe_button, exam_score_button)
@@ -209,6 +213,7 @@ async def dtm_ball_func(message: types.Message, state: FSMContext):
 
 @dp.callback_query_handler(lambda c: c.data == 'check_subscription')
 async def check_subscription(callback_query: types.CallbackQuery, state: FSMContext):
+    print(CHANNEL_ID)
     user_id = callback_query.from_user.id
     user_status = await bot.get_chat_member(chat_id=CHANNEL_ID, user_id=user_id)
     if user_status['status'] in ['member', 'administrator', 'creator']:
@@ -219,7 +224,10 @@ async def check_subscription(callback_query: types.CallbackQuery, state: FSMCont
         sent_message = await bot.send_message(user_id, "Rahmat 😎, endi botdan to'liq foydalanishingiz mumkin.")
         inline_kb = InlineKeyboardMarkup(row_width=1)
         subscribe_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', url='https://my.uzbmb.uz/allow/bachelor-allow')
-        exam_score_button = InlineKeyboardButton('📃Imtihon balini bilish', web_app=WebAppInfo(url=web_app_url))
+        # creative_button = InlineKeyboardButton('🎨Kasbiy (ijodiy) imtihon uchun ruxsatnoma', url=creative_url)
+        creative_button = InlineKeyboardButton('📥Abituriyent ruxsatnomasini olish', web_app=WebAppInfo(url="https://my.uzbmb.uz/allow/bachelor-allow"))
+
+        exam_score_button = InlineKeyboardButton('🎨Kasbiy (ijodiy) imtihon uchun ruxsatnom', web_app=WebAppInfo(url=creative_url))
         # Add both buttons to the inline keyboard
         inline_kb.add(subscribe_button, exam_score_button)
 
